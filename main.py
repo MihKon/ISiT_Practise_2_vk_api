@@ -5,7 +5,6 @@ TOKEN = ''
 
 def get_friends(vk, id, fr_dict: dict):
     curr_friends = fr_dict.keys()
-    fr_lst = []
     try:
         friends = vk.friends.get(user_id=id)['items']
         for friend in curr_friends:
