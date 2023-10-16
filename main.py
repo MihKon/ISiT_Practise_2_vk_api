@@ -29,7 +29,7 @@ vk_session = vk_api.VkApi(token=TOKEN)
 
 vk = vk_session.get_api()
 
-friends = vk.friends.get(count=5)
+friends = vk.friends.get()
 
 friends_dict = dict()
 
